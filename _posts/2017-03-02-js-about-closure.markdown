@@ -561,6 +561,51 @@ addEventTest();
 ----
 
 
+### 불필요한 클로저 생성 방지(함수 내 함수 생성)
+
+특별히 클로저가 필요하지 않은데도 불구하고, 불필요하게 클로저를 많이 만들게 되면  
+처리 속도, 메모리 소비 측면 모두에서 부정적인 영향을 끼칠 것이다.  
+즉, **함수 내에서 함수를 불필요하게 많이 만드는 것은 조심** 해야 한다.
+
+``` javascript
+// 예제 10 : PersonObject
+function PersonObject(name, age) {
+  this.name = name.toString();
+  this.age = age;
+  this.getName = function() {
+    return this.name;
+  };
+
+  this.getAge = function() {
+    return this.age;
+  };
+}
+```
+
+예를 들어서 위의 예제 10을 보자.  
+새로운 객체/클래스를 생성할 떄, 메서드는 일반적으로 객체 생성자에 정의되기 보다는  
+객체의 프로토타입에 연결되는 것이 좋다.  
+객체 생성자에 메서드가 정의되면, 생성자가 호출될 때마다  
+즉, 객체가 새로 생성될 때마다 메서드가 다시 할당되기 때문이다.
+
+``` javascript
+// 예제 10-1 : 예제 10의 보완 예제
+function MyObject(name, message) {
+  this.name = name.toString();
+  this.message = message.toString();
+}
+MyObject.prototype.getName = function() {
+  return this.name;
+};
+MyObject.prototype.getMessage = function() {
+  return this.message;
+};
+```
+
+그렇게 바뀐 예제가 예제 10-1 이다.  
+불필요한 내부함수를 제거하고, prototype에 메서드를 연결해주었다.  
+
+
 ### 메모리 누수
 
 javascript는 garbage collection을 이용해서 사용하지 않는 메모리를 반환한다.  

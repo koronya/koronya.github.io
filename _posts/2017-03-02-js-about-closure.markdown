@@ -19,27 +19,6 @@ categories: jekyll update
 이것이 무슨 말인지 아래의 예를 통해서 살펴보자.
 
 
-{% highlight javascript linenos %}
-// 예제 1
-var name = 'global var';
-
-function makeFnc() {
-  var name = 'function var';
-  function displayName() {
-    console.log('name : ', name);
-  }
-  return displayName;
-}
-
-var myFnc = makeFnc();
-console.log('myFnc : ', myFnc);
-
-myFnc();
-// 이 때의 closure에 name이 'function var'가 저장되어 있음
-// 즉, makeFunc()의 환경이 저장되어 있음
-{% endhighlight %}
-
-
 ``` javascript
 // 예제 1
 var name = 'global var';
@@ -371,7 +350,7 @@ show 함수가 loopTest() 함수 밑에 만들어졌으므로, e라는 값을 �
 아래의 예제를 보자.
 
 ``` javascript
-// 에제 7-3 되는 예제
+// 예제 7-3 되는 예제
 function loopTest() {
   for(var i = 0; i < 5; i++) {
       setTimeout(show, 1000, i);

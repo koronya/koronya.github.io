@@ -2,7 +2,7 @@
 layout: post
 title:  "Javascript Closure 정리"
 date:   2017-03-02 14:10:17 +0900
-categories: jekyll update
+categories: javascript
 ---
 
 

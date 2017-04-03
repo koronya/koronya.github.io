@@ -2,7 +2,7 @@
 layout: post
 title:  "Javascript Function 표현 정리"
 date:   2017-04-01 17:20:17 +0900
-categories: jekyll update
+categories: javascript
 ---
 
 

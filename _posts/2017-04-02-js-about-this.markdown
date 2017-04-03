@@ -2,7 +2,7 @@
 layout: post
 title:  "Javascript에서의 this정리"
 date:   2017-04-02 10:20:17 +0900
-categories: jekyll update
+categories: javascript
 ---
 
 
@@ -210,3 +210,5 @@ say();
 - [더글라스 크락포드의 자바스크립트 핵심 가이드](http://book.naver.com/bookdb/book_detail.nhn?bid=4774270)
 - <http://bonsaiden.github.io/JavaScript-Garden/ko/#function.this>
 - <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this>
+- <http://unikys.tistory.com/306>
+- <http://poiemaweb.com/js-this>

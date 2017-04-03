@@ -3,6 +3,7 @@ layout: post
 title:  "Javascript에서의 this정리"
 date:   2017-04-02 10:20:17 +0900
 categories: javascript
+tags: [javascript, 자바스크립트, this]
 ---
 
 

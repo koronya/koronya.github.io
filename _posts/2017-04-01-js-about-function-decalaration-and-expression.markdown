@@ -3,6 +3,7 @@ layout: post
 title:  "Javascript Function 표현 정리"
 date:   2017-04-01 17:20:17 +0900
 categories: javascript
+tags: [javascript, 자바스크립트, function declaration, function expression]
 ---
 
 

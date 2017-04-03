@@ -81,8 +81,8 @@ function hello() {
 
 linenos를 넣으면 line number도 출력된다.
 
-\{\% highlight javascript linenos \%\}  
-code~~~  
+\{\% highlight javascript linenos \%\}
+code~~~
 \{\% endhighlight \%\}
 
 {% highlight javascript linenos %}
@@ -104,7 +104,7 @@ function hello() {
 
 ------------------------------------------------
 
-\-\-\-\- 4개 이상 써서 수평선  
+\-\-\-\- 4개 이상 써서 수평선
 여기 아래에 수평선 삽입!
 
 ----
@@ -117,7 +117,7 @@ function hello() {
 
 ------------------------------------------------
 
-해당 줄의 끝에서 공백을 두칸 입력하면  
+해당 줄의 끝에서 공백을 두칸 입력하면
 띄어쓰기가 된다.
 
 
@@ -127,10 +127,10 @@ function hello() {
 
 ------------------------------------------------
 
-italic은 \*로 감[^koro]싸거나, \_로 감싸기
+italic은 \*로 감싸거나, \_로 감싸기
 
 
-*single asterisks*  
+*single asterisks*
 _single underscore_
 
 ### bold
@@ -139,7 +139,7 @@ _single underscore_
 
 bold는 \*\*로 감싸거나, \_\_로 감싸기
 
-**double asterisks**  
+**double asterisks**
 __double underscore__
 
 

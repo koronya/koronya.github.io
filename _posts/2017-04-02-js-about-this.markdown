@@ -7,14 +7,14 @@ tags: [javascript, 자바스크립트, this]
 ---
 
 
-## Javascript에서의 this
+# Javascript에서의 this
 Javascript에서 **this**는 참 햇갈리는 녀석이다. 다른 프로그래밍 언어의 this와는 개념이 달라서 당황할 때가 생각보다 많은데
 이번 post에서는 이런 this에 대해서 정리해보고자 한다.
 
-## 기본적인 this의 5가지 해석
+# 기본적인 this의 5가지 해석
 this는 함수를 어떻게 호출하는지에 따라서 다르게 결정된다.
 
-### Global Scope
+## Global Scope
 아래의 예제 처럼 Global Scope에서 사용되는 this는 Global 객체를 가리킨다.
 
 ``` javascript
@@ -22,7 +22,7 @@ this는 함수를 어떻게 호출하는지에 따라서 다르게 결정된다.
 console.log(this);      // Global(브라우저에서 Window 객체)
 ```
 
-### 함수 호출 패턴 - 함수를 호출할 때
+## 함수 호출 패턴 - 함수를 호출할 때
 아래의 예제 2를 보자. foo()를 호출하면, 그 때의 this도 Global 객체를 가리킨다.
 ``` javascript
 // 예제 2 - 함수를 호출할 때의 this
@@ -33,7 +33,7 @@ var foo = function () {
 foo();
 ```
 
-### 메소드 호출 패턴 - 메소드로 호출할 때
+## 메소드 호출 패턴 - 메소드로 호출할 때
 
 어떤 객체가 자신의 메소드를 호출하게 되면, 그 때의 this는 해당 객체가 된다.
 
@@ -69,7 +69,7 @@ tempObj.hello();    // this는 tempObj 객체,    this.name은 Temp
 
 ```
 
-### 생성자 호출 패턴 - 생성자를 호출할 때
+## 생성자 호출 패턴 - 생성자를 호출할 때
 new 키워드로 생성자를 실행시키는 경우에, 이 생성자 안에서의 this는 새로 만들어진 객체를 가리킨다.
 아래의 예제를 보자. Person은 생성자 함수이다.
 tom을 new를 이용해서 생성자를 호출하면, 생성자 안에서의 this는 tom 객체를 가리킨다.(새로 만들어진 객체)
@@ -90,7 +90,7 @@ console.log(tom.getName());     // Tom
 ```
 
 
-### apply 호출 패턴 - this가 가리키는 객체 정해준 경우(call, apply, ...)
+## apply 호출 패턴 - this가 가리키는 객체 정해준 경우(call, apply, ...)
 apply 메소드는 함수를 호출할 때, 사용할 인수들의 배열을 받아들인다. 또한, this의 값을 선택할 수 있게 해준다.
 첫번째 인자가 this에 binding될 값이고, 두번째 인자는 매개변수로 전달할 배열이다.
 call 메소드는 apply와 같지만, 전달해줄 매개변수가 하나의 배열이 아니라 여러개로 늘어뜨려서 보내준다.
@@ -113,7 +113,7 @@ add.apply(temp, [4, 5]);    // 3 + 4 + 5 = 12
 ```
 
 
-## this를 고정 - innerFunc의 경우 자주 사용
+# this를 고정 - innerFunc의 경우 자주 사용
 아래의 예제 6을 보자.
 person의 sayAge method안에 innerSay함수를 이중으로 불러주고 있다.
 person.sayAge()를 하면, person의 this는 person 객체가 되고, 이 때의 age는 25가 맞는데
@@ -195,14 +195,14 @@ say();
 이렇게 부르면...this는 그냥 Global 객체이니 유의하자.
 
 
-## 최종 정리
+# 최종 정리
 - javascript에서의 this는 사용하는 패턴에 따라, 다양하게 binding된다.
     - global, 함수, 메소드, 생성자, apply
 - 자신이 원하는 객체값을 사용하고자 할 때, .bind나 var self=this를 사용할 수 있다.
 
 
 
-## Reference
+# Reference
 
 - [더글라스 크락포드의 자바스크립트 핵심 가이드](http://book.naver.com/bookdb/book_detail.nhn?bid=4774270)
 - <http://bonsaiden.github.io/JavaScript-Garden/ko/#function.this>

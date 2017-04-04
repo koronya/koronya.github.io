@@ -7,10 +7,6 @@ tags: [javascript, 자바스크립트, this]
 ---
 
 
-* 목차
-{:toc}
-
-
 ## Javascript에서의 this
 Javascript에서 **this**는 참 햇갈리는 녀석이다. 다른 프로그래밍 언어의 this와는 개념이 달라서 당황할 때가 생각보다 많은데
 이번 post에서는 이런 this에 대해서 정리해보고자 한다.

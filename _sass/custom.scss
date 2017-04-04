@@ -1,0 +1,35 @@
+
+
+// // 기본 toc로 나타낼 때의 style들...
+//
+// // Adding 'Contents' headline to the TOC
+// #markdown-toc::before {
+//     content: "Contents";
+//     font-weight: bold;
+// }
+//
+// // Using numbers instead of bullets for listing
+// #markdown-toc ul {
+//     list-style: decimal;
+// }
+//
+// #markdown-toc {
+//     border: 1px solid #aaa;
+//     padding: 1.5em;
+//     list-style: decimal;
+//     display: inline-block;
+// }
+
+// 목차에 해당하는 부분의 style
+div#toc {
+    padding: 10px;
+    border: 1px solid #aaa;
+    display: inline-block !important;
+}
+
+// 목차로 돌아가기에 해당하는 style
+.back-to-top {
+  margin-left:5px;
+  cursor:pointer;
+  font-size:0.25em;
+}

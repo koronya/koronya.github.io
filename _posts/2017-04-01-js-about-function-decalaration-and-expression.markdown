@@ -6,11 +6,6 @@ categories: javascript
 tags: [javascript, 자바스크립트, function declaration, function expression]
 ---
 
-
-* 목차
-{:toc}
-
-
 ## 들어가며
 Javascript에서 함수를 쓰기 위해서는 변수에 저장을 하고 호출하거나, 저장하지 않고 바로 실행하거나 하는 등의 방법이 있고 함수를 선언, 할당하는 방식에도 여러 방식이 있다. 이번 글에서는 함수 선언, 함수 표현식, 즉시실행함수 등에 대해서 적어보도록 하겠다.
 

@@ -10,6 +10,7 @@ layout: default
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
+  <div id="toc"></div>
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
@@ -18,3 +19,12 @@ layout: default
     {% include disqus_comments.html %}
   {% endif %}
 </article>
+
+<script src="{{ '/assets/js/lib/jquery-3.2.0.min.js' }}"></script>
+<script src="{{ '/assets/js/toc_koro.js' }}"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#toc').toc({});
+    // $('#toc').toc({ headers: 'h1, h2, h3'});
+});
+</script>

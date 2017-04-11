@@ -27,7 +27,7 @@ sourcetree에서만 안되고 있었는데
 일단, 현재 쓰고 있는 sourcetree 프로그램을 update하자.  
 본인은 기존에 sourcetree 2.3.1(69)을 사용하고 있었는데(MAC 버전)  
 왜 인지는 모르겠지만, sourcetree 프로그램은 update 확인... 을 눌러도  
-update가 되지 않아서, 홈페이지에 가서 최신 버전을 받아주었다.  
+update가 되지 않아서, 홈페이지[^2]에 가서 최신 버전을 받아주었다.  
 이 글을 쓰는 현재의 최신 버전은 맥 기준 2.4.1(97)  
 update를 하고 실행시킨 뒤에  
 sourcetree의 설정을 눌러보면(⌘,)  
@@ -93,3 +93,4 @@ SourceTree의 원격 탭에서도 bitbucket이 잘 나오는 것을 볼 수 있.
 # Reference
 
 [^1]: <https://blog.sourcetreeapp.com>
+[^2]: <https://www.sourcetreeapp.com>
